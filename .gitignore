@@ -1,3 +1,7 @@
 # Ignore directory
+# Ignore every __pycache__
+__pycache__
 */__pycache__
+
+# Ignore backup directory
 /dataset/backup/
