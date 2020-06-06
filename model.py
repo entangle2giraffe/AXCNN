@@ -1,6 +1,6 @@
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Dense, Flatten
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Dense, Flatten, Activation
 
 
 # CNN Model
@@ -14,9 +14,13 @@ def create_model():
     model.add(Flatten())
     model.add(Dense(64, activation='relu'))
     model.add(Dense(10))
+    model.add(Activation('softmax'))
     return model
 
 
 # Summary of the model
 model = create_model()
 model.summary()
+
+if __name__ == 'model':
+  create_model()
