@@ -61,9 +61,6 @@ def image(filepath):
     plt.show()
 
 
-cat = clist()
-print(cat)
-
 if __name__ == 'utils':
     pload()
     clist()
