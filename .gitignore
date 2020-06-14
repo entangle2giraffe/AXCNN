@@ -5,3 +5,6 @@ __pycache__
 
 # Ignore backup directory
 /dataset/backup/
+
+# Ignore outdated module
+pickle_load(outdated).py
