@@ -50,19 +50,13 @@ def clist():
 
 def prepare(filepath):
     IMG_SIZE = 57
-    img_array = cv2.imread(file, CV2.IMREAD_COLOR)
+    img_array = cv2.imread(filepath, cv2.IMREAD_COLOR)
     norm_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE))
-    return norm_array.reshape(-1, IMG_SIZE, IMG_SIZE, 3)
-
-
-def image(filepath):
-    plt.switch_backend('tkagg')
     plt.imshow(img_array)
     plt.show()
+    return norm_array.reshape(-1, IMG_SIZE, IMG_SIZE, 3)
 
 
 if __name__ == 'utils':
     pload()
     clist()
-    prepare()
-    image()
