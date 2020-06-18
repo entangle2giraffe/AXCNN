@@ -2,8 +2,8 @@
 __pycache__
 */__pycache__
 
-# Ignore backup directory
-/dataset/backup/
+# Ignore dataset directory
+/dataset/*
 
 # Ignore outdated module
 pickle_load(outdated).py
