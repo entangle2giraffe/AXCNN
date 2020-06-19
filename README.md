@@ -1,4 +1,6 @@
 # **AXCNN**
+This model create to predicts a picture that in following
+**categories** = *('dog', 'horse', 'elephant', 'butterfly', 'chicken', 'cat', 'cow', 'sheep', 'spider', 'squirrel')*
 ## Table of contents
 * [Requirements](#requirements)
 * [Model](#model)
