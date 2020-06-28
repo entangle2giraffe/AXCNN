@@ -9,13 +9,6 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 
-def LOAD():
-    # load in X and y
-    X_train, y_train, X_val, y_val = pload()
-
-    return (X_train, y_train, X_val, y_val)
-
-
 def COMPILE():
 
     # Import model from model.py
@@ -29,7 +22,8 @@ def COMPILE():
 
 
 model = COMPILE()
-X_train, y_train, X_val, y_val = LOAD()
+
+X_train, y_train, X_val, y_val = pload()
 # Callbacks
 # Comment out if you want to use callbacks
 #log_dir = "logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
@@ -65,6 +59,7 @@ def SAVE():
 
 def EVALUATE():
     if '-e' in sys.argv:
+        model.summary()
         plt.plot(history.history['accuracy'], label='accuracy')
         plt.plot(history.history['val_accuracy'], label='val_accuracy')
         plt.xlabel('Epoch')

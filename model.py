@@ -18,9 +18,5 @@ def create_model():
     return model
 
 
-# Summary of the model
-model = create_model()
-model.summary()
-
 if __name__ == 'model':
-  create_model()
+    create_model()

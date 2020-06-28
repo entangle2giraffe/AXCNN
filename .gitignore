@@ -2,8 +2,9 @@
 __pycache__
 */__pycache__
 
-# Ignore dataset directory
+# Ignore directory
 /dataset/*
+/optimizing/*.py
 
 # Ignore outdated module
 pickle_load(outdated).py
