@@ -24,3 +24,5 @@ We will get raw-img directory.
 $python ~/{path to the dir}/preprocessing/split.py
 $python ~/{path to the dir}/preprocessing/load.py
 ```
+
+## This project is currently dead
